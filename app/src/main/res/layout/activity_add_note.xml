@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".AddNoteActivity">
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:inputType="text"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_text"
+            android:textColor="@android:color/black"
+            android:padding="8dp"
+            android:hint="@string/title"/>
+
+        <EditText
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/details"
+            android:padding="8dp"
+            android:background="@drawable/edit_text"
+            android:textColor="@android:color/black"
+            android:inputType="textMultiLine"/>
+        <Button
+            android:id="@+id/addphoto"
+            android:layout_width="wrap_content"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:text="@string/addphoto"
+            />
+
+
+        <GridView
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/gv"
+            android:numColumns="3"
+            android:layout_weight="1">
+        </GridView>
+
+        <Button
+            android:id="@+id/addnote"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/add_note"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+
+
+
+
+
+    </LinearLayout>
